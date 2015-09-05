@@ -3,7 +3,7 @@
 # Compiles a list of ad-serving domains by downloading them from multiple sources 
 
 # This script should only be run after you have a static IP address set on the Pi
-piholeIP=$IP
+piholeIP=${IP:-127.0.0.1}
 
 # Ad-list sources--one per line in single quotes
 sources=('https://adaway.org/hosts.txt'
